@@ -55,6 +55,7 @@
                 android:id="@+id/switchSuma"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="onClickSwitchSuma"
                 android:layout_weight="1" />
 
             <LinearLayout
