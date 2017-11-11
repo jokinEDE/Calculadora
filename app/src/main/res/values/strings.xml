@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Calculadora</string>
+
+    <string name="C">C</string>
+    <string name="SimboloPotencia"></string>
+    <string name="simboloRaiz">√</string>
+    <string name="simboloDivision">÷</string>
+    <string name="Num7">7</string>
+    <string name="Num8">8</string>
+    <string name="Num9">9</string>
+    <string name="simboloMultiplicacion">x</string>
+    <string name="Num4">4</string>
+    <string name="Num5">5</string>
+    <string name="Num6">6</string>
+    <string name="simboloResta">-</string>
+    <string name="Num1">1</string>
+    <string name="Num2">2</string>
+    <string name="Num3">3</string>
+    <string name="simboloSuma">+</string>
+    <string name="simboloMasMenos">±</string>
+    <string name="Num0">0</string>
+    <string name="simboloComa">,</string>
+    <string name="simboloResultado">=</string>
+    <string name="opciones">OPCIONES</string>
+    <string name="salir">SALIR</string>
+
+    <string name="habilitar_operadores">Habilitar / Deshabilitar Operaciones</string>
+    <string name="Idiomas">Elige el idioma</string>
+    <string name="ColoresOperandos">Selecciona el color de los operandos</string>
+    <string name="ColoresOperadores">Selecciona el color de los operadores</string>
+    <string name="ColoresOperadoresyOperandos">Selecciona el color de los operadores y/o Operandos</string>
+    <string name="suma">Suma</string>
+    <string name="resta">Resta</string>
+    <string name="multiplicacion">Multiplicación</string>
+    <string name="division">División</string>
+
+    <string name="spn_Operadores">Elige el color de los operadores</string>
+    <string-array name="OperadorColores">
+        <item>Rojo</item>
+        <item>Verde</item>
+        <item>Azul</item>
+    </string-array>
+
+    <string name="spn_Operandos">Elija el color de los operandos</string>
+    <string-array name="OperandoColores">
+        <item>Rojo</item>
+        <item>Verde</item>
+        <item>Azul</item>
+    </string-array>
+</resources>
