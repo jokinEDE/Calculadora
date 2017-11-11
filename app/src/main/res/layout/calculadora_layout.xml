@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
 
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/diseñoTabla"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/darker_gray">
+    android:background="#646464">
 
 
     <TextView
@@ -28,29 +29,28 @@
         android:textSize="50dp"
 
         />
+
     <TableRow
         android:id="@+id/primeraFilaTabla"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-
-        >
+        android:layout_width="103dp"
+        android:layout_height="90dp"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center">
 
 
         <Button
             android:id="@+id/botonC"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="103dp"
+            android:layout_height="90dp"
             android:background="?android:attr/colorControlHighlight"
             android:padding="25dp"
             android:text="@string/C"
-            android:textSize="20dp"
-            />
+            android:textSize="20dp" />
 
         <Button
             android:id="@+id/botonPotencia"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="103dp"
+            android:layout_height="90dp"
             android:background="?attr/colorControlHighlight"
             android:padding="25dp"
             android:text=""
@@ -58,8 +58,8 @@
 
         <Button
             android:id="@+id/botonRaiz"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="103dp"
+            android:layout_height="90dp"
             android:background="?attr/colorControlHighlight"
 
             android:padding="25dp"
@@ -68,8 +68,8 @@
 
         <Button
             android:id="@+id/botonDivision"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="103dp"
+            android:layout_height="90dp"
             android:background="?attr/colorControlHighlight"
             android:onClick="onClickOperador"
             android:padding="25dp"
@@ -80,14 +80,15 @@
     <TableRow
         android:id="@+id/segundaFilaTabla"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"
         android:gravity="center">
 
 
         <Button
             android:id="@+id/botonNum7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="103dp"
+            android:layout_height="90dp"
             android:background="?attr/colorControlHighlight"
             android:onClick="onClickNumero"
             android:padding="25dp"
@@ -96,8 +97,8 @@
 
         <Button
             android:id="@+id/botonNum8"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="103dp"
+            android:layout_height="90dp"
             android:background="?attr/colorControlHighlight"
             android:onClick="onClickNumero"
             android:padding="25dp"
@@ -106,8 +107,8 @@
 
         <Button
             android:id="@+id/botonNum9"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="103dp"
+            android:layout_height="90dp"
             android:background="?attr/colorControlHighlight"
             android:onClick="onClickNumero"
             android:padding="25dp"
@@ -116,8 +117,8 @@
 
         <Button
             android:id="@+id/botonMultiplicacion"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="103dp"
+            android:layout_height="90dp"
             android:background="?attr/colorControlHighlight"
             android:onClick="onClickOperador"
             android:padding="25dp"
@@ -129,13 +130,14 @@
 
         android:id="@+id/terceraFilaTabla"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"
         android:gravity="center">
 
         <Button
             android:id="@+id/botonNum4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="103dp"
+            android:layout_height="90dp"
             android:background="?attr/colorControlHighlight"
             android:onClick="onClickNumero"
             android:padding="25dp"
@@ -144,8 +146,8 @@
 
         <Button
             android:id="@+id/botonNum5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="103dp"
+            android:layout_height="90dp"
             android:background="?attr/colorControlHighlight"
             android:onClick="onClickNumero"
             android:padding="25dp"
@@ -154,8 +156,8 @@
 
         <Button
             android:id="@+id/botonNum6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="103dp"
+            android:layout_height="90dp"
             android:background="?attr/colorControlHighlight"
             android:onClick="onClickNumero"
             android:padding="25dp"
@@ -164,8 +166,8 @@
 
         <Button
             android:id="@+id/botonResta"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="103dp"
+            android:layout_height="90dp"
             android:background="?attr/colorControlHighlight"
             android:onClick="onClickOperador"
             android:padding="25dp"
@@ -177,15 +179,15 @@
     <TableRow
 
         android:id="@+id/cuartaFilaTabla"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        >
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center">
 
         <Button
             android:id="@+id/botonNum1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="103dp"
+            android:layout_height="90dp"
             android:background="?android:attr/colorControlHighlight"
             android:onClick="onClickNumero"
             android:padding="25dp"
@@ -194,8 +196,8 @@
 
         <Button
             android:id="@+id/botonNum2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="103dp"
+            android:layout_height="90dp"
             android:background="?android:attr/colorControlHighlight"
             android:onClick="onClickNumero"
             android:padding="25dp"
@@ -204,8 +206,8 @@
 
         <Button
             android:id="@+id/botonNum3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="103dp"
+            android:layout_height="90dp"
             android:background="?android:attr/colorControlHighlight"
             android:onClick="onClickNumero"
             android:padding="25dp"
@@ -214,8 +216,8 @@
 
         <Button
             android:id="@+id/botonSuma"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="103dp"
+            android:layout_height="90dp"
             android:background="?android:attr/colorControlHighlight"
             android:onClick="onClickOperador"
             android:padding="25dp"
@@ -226,14 +228,15 @@
     <TableRow
 
         android:id="@+id/quintaFilaTabla"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"
         android:gravity="center">
 
         <Button
             android:id="@+id/botonCambioSigno"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="103dp"
+            android:layout_height="90dp"
             android:background="?attr/colorControlHighlight"
             android:padding="25dp"
             android:text="@string/simboloMasMenos"
@@ -242,8 +245,8 @@
 
         <Button
             android:id="@+id/botonNum0"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="103dp"
+            android:layout_height="90dp"
             android:background="?android:attr/colorControlHighlight"
             android:onClick="onClickNumero"
             android:padding="25dp"
@@ -253,50 +256,52 @@
 
         <Button
             android:id="@+id/botonComa"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="103dp"
+            android:layout_height="90dp"
             android:background="?android:attr/colorControlHighlight"
+            android:onClick="onClickComa"
             android:padding="25dp"
             android:text="@string/simboloComa"
-            android:onClick="onClickComa"
             android:textSize="20dp" />
 
         <Button
             android:id="@+id/botonResultado"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="103dp"
+            android:layout_height="90dp"
             android:background="?android:attr/colorControlHighlight"
+            android:onClick="onClickIgual"
             android:padding="25dp"
             android:text="@string/simboloResultado"
-            android:textSize="20dp"
-            android:onClick="onClickIgual"/>
+            android:textSize="20dp" />
     </TableRow>
 
 
     <TableRow
 
         android:id="@+id/sextaFilaTabla"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:gravity="center">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#646464"
+        android:gravity="center"
+        android:paddingTop="20dp">
 
         <Button
             android:id="@+id/botonOpciones"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="opciones"
             android:padding="5dp"
             android:text="@string/opciones"
-            android:onClick="opciones"
-            android:textSize="20dp" />
+            android:textSize="16dp" />
 
         <Button
             android:id="@+id/botonSalir"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="BotonSalirPulsado"
             android:padding="5dp"
             android:text="@string/salir"
-            android:textSize="20dp"
-            android:onClick="BotonSalirPulsado"/>
+            android:textSize="16dp" />
     </TableRow>
 
 </TableLayout>
