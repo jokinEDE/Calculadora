@@ -45,6 +45,7 @@
             android:background="?android:attr/colorControlHighlight"
             android:padding="25dp"
             android:text="@string/C"
+            android:onClick="onClickLimpiar"
             android:textSize="20dp" />
 
         <Button

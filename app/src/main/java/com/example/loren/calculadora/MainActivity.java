@@ -16,7 +16,8 @@ public class MainActivity extends AppCompatActivity{
 
     private String num1,num2,resultado;
     private String operador;
-
+    private int posicionOperador;
+    boolean prueba=false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,9 +36,9 @@ public class MainActivity extends AppCompatActivity{
 
     public void onClickNumero(View v){
 
-        Button b = (Button) v; //Creamos un botón para después coger su contenido (String)
-        textoOperaciones += b.getText(); //Agregamos a la cadena textoOperaciones el String (número) del botón.
-        mostrarOperaciones(); //Llamamos al método mostrarOperaciones() para mostrar la cadena textoOperaciones.
+        Button b = (Button) v;              //Creamos un botón para después coger su contenido (String)
+        textoOperaciones += b.getText();    //Agregamos a la cadena textoOperaciones el String (número) del botón.
+        mostrarOperaciones();               //Llamamos al método mostrarOperaciones() para mostrar la cadena textoOperaciones.
     }
 
 
@@ -69,7 +70,6 @@ public class MainActivity extends AppCompatActivity{
 
     }
     public void onClickIgual(View v) {
-        int posicionOperador;
 
         if (textoOperaciones.startsWith("√") ){
             num1 = textoOperaciones.substring(1,textoOperaciones.length());
@@ -104,27 +104,21 @@ public class MainActivity extends AppCompatActivity{
     }
     public void onClickComa(View v){
 
+        Button b = (Button) v;
 
+        if(textoOperaciones.length() > 0 && esNumero(textoOperaciones.substring(textoOperaciones.length() - 1)) && num1!="." && !num1.contains(".")) {
 
-        if(textoOperaciones.length() > 0 && num1.contains(".")){
-
-        }else{
-
-            num1+=".";
-            textoOperaciones+= ".";
+            num1 += ".";
+            textoOperaciones += ".";
             mostrarOperaciones();
-        }
 
-        if( num2.contains(".") || textoOperaciones.contains(".")){
+        }else if (num1.contains(".") && textoOperaciones.contains("+") && num2!="." && !prueba ){
 
-        }else{
-
-            num2+=".";
-            textoOperaciones+= ".";
+            num2 += ".";
+            textoOperaciones += ".";
             mostrarOperaciones();
+            prueba=true;
         }
-
-
 
     }
 
@@ -148,11 +142,33 @@ public class MainActivity extends AppCompatActivity{
         num1 ="";
         num2 = "";
         operador = "";
+        prueba=false;
     }
 
     public void opciones(View v){
         Intent i1=new Intent(this, opciones.class);
         startActivity(i1);
+    }
+
+    public void Restaurar(Bundle v){
+        if(v != null){                                              //Cuando se guarda información en el saco...
+
+            textoOperaciones = v.getString("operaciones");     //Guardamos en textoOperaciones la información que había
+            mostrarOperaciones();
+            resultado = v.getString("resultado");               // Guardamos en resultado la información que había
+
+            if(pantallaResultado.getText().toString()!="") {
+                pantallaResultado.setText(resultado);
+            }else{
+                pantallaResultado.setText(resultado);
+            }
+        }
+    }
+
+    public void onSaveInstanceState(Bundle outState) {
+        outState.putString("operaciones",textoOperaciones);
+        outState.putString("resultado",resultado);
+
     }
 
 }
