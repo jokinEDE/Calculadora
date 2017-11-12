@@ -31,6 +31,8 @@ public class MainActivity extends AppCompatActivity{
         num1 = "";
         num2="";
 
+        Restaurar(savedInstanceState);
+
     }
 
 
@@ -155,7 +157,7 @@ public class MainActivity extends AppCompatActivity{
 
             textoOperaciones = v.getString("operaciones");     //Guardamos en textoOperaciones la información que había
             mostrarOperaciones();
-            resultado = v.getString("resultado");               // Guardamos en resultado la información que había
+            resultado = v.getString("resultado");              // Guardamos en resultado la información que había
 
             if(pantallaResultado.getText().toString()!="") {
                 pantallaResultado.setText(resultado);
