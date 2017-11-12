@@ -62,9 +62,9 @@
             android:layout_width="103dp"
             android:layout_height="90dp"
             android:background="?attr/colorControlHighlight"
-
             android:padding="25dp"
             android:text="@string/simboloRaiz"
+            android:onClick="onClickOperador"
             android:textSize="20dp" />
 
         <Button

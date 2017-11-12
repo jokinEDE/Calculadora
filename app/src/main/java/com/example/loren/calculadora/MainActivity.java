@@ -144,6 +144,7 @@ public class MainActivity extends AppCompatActivity{
         num1 ="";
         num2 = "";
         operador = "";
+        resultado="";                           //Revisar Loren
         prueba=false;
     }
 
@@ -156,6 +157,9 @@ public class MainActivity extends AppCompatActivity{
         if(v != null){                                              //Cuando se guarda información en el saco...
 
             textoOperaciones = v.getString("operaciones");     //Guardamos en textoOperaciones la información que había
+            num1=v.getString("num1");                          //Revisar Loren
+            num2=v.getString("num2");                          //Revisar Loren
+            operador=v.getString("operador");                  //Revisar Loren
             mostrarOperaciones();
             resultado = v.getString("resultado");              // Guardamos en resultado la información que había
 
@@ -169,6 +173,9 @@ public class MainActivity extends AppCompatActivity{
 
     public void onSaveInstanceState(Bundle outState) {
         outState.putString("operaciones",textoOperaciones);
+        outState.putString("num1",num1);                        //Revisar Loren
+        outState.putString("num2",num2);                        //Revisar Loren
+        outState.putString("operador",operador);                //Revisar Loren
         outState.putString("resultado",resultado);
 
     }
