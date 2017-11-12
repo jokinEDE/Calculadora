@@ -7,9 +7,15 @@ import android.widget.Button;
 import android.widget.Switch;
 import android.widget.Toast;
 
+import java.util.ArrayList;
+
 public class opciones extends AppCompatActivity {
     Button mBotonSuma;
     Switch mSwitchSuma;
+    Switch mSwitchResta;
+    Switch mSwitchMultiplacion;
+    Switch mSwitchDivision;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,12 +23,26 @@ public class opciones extends AppCompatActivity {
         setContentView(R.layout.opciones);
 
         mSwitchSuma = (Switch) findViewById(R.id.switchSuma);
-        mBotonSuma = (Button) findViewById(R.id.botonSuma);
+        mSwitchResta = (Switch) findViewById(R.id.switchResta);
+        mSwitchMultiplacion = (Switch) findViewById(R.id.switchResta);
+        mSwitchDivision = (Switch) findViewById(R.id.switchDivision);
+
+
+        //mBotonSuma = (Button) findViewById(R.id.botonSuma);
     }
 
-    public void onClickSwitchSuma(View v) {
+    /*public void onClickSwitchSuma(View v) {
+        if (v.getId()==R.id.switchSuma){
+            if(mSwitchSuma.isChecked()){
+                mBotonSuma.setEnabled(false);
+            }else{
+                mBotonSuma.setEnabled(true);
+            }
 
-        Toast.makeText(this, "Que pasaaa", Toast.LENGTH_SHORT).show();
+        }*/
 
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
     }
 }

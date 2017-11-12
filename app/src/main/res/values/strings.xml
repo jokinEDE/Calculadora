@@ -2,7 +2,6 @@
     <string name="app_name">Calculadora</string>
 
     <string name="C">C</string>
-    <string name="SimboloPotencia"></string>
     <string name="simboloRaiz">√</string>
     <string name="simboloDivision">÷</string>
     <string name="Num7">7</string>
@@ -21,6 +20,7 @@
     <string name="Num0">0</string>
     <string name="simboloComa">,</string>
     <string name="simboloResultado">=</string>
+    <string name="simboloPotencia">^</string>
     <string name="opciones">OPCIONES</string>
     <string name="salir">SALIR</string>
 

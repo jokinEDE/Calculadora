@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import java.util.ArrayList;
 import java.util.regex.Pattern;
 
 public class MainActivity extends AppCompatActivity{
@@ -18,6 +20,7 @@ public class MainActivity extends AppCompatActivity{
     private String operador;
     private int posicionOperador;
     boolean prueba=false;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,7 +63,7 @@ public class MainActivity extends AppCompatActivity{
         }
 
 
-        if (textoOperaciones.length() > 0 && textoOperaciones != "√" ) {
+        if (textoOperaciones.length() > 0 && textoOperaciones != "√" && operador.isEmpty()) {
             if (esNumero(textoOperaciones.substring(textoOperaciones.length() - 1)) || textoOperaciones.substring(textoOperaciones.length() - 1)==".") {
                 textoOperaciones += b.getText();
                 operador = b.getText().toString();

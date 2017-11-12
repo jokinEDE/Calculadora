@@ -54,7 +54,7 @@
             android:layout_height="90dp"
             android:background="?attr/colorControlHighlight"
             android:padding="25dp"
-            android:text=""
+            android:text="@string/simboloPotencia"
             android:textSize="20dp" />
 
         <Button
